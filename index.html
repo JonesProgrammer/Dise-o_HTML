@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+  <title>Información Personal</title>
+</head>
+<body>
+  <div id="container">
+    <div id="izquierda">
+      <h1 id="mostrar_nombre"></h1>
+      <div id="rectangulo"></div>
+      <h2>Acerca de mi:</h2>
+      <p>Genero: <span id="mostrar_genero"></span></p>
+      <p>Fecha de Nacimiento: <span id="mostrar_fecha"></span></p>
+      <h2>Informacion de contacto:</h2>
+      <p>Número de Celular: <span id="mostrar_celular"></span></p>
+      <p>Correo Electrónico: <span id="mostrar_correo"></span></p>
+    </div>
+    <div id="derecha">
+      <img id="mostrar_foto" src="img/faker.jpg">
+      <h2>Seleccione el tipo de documento: </h2>
+      <label>
+        <i class='bx bxs-user-account'></i>
+        <select id="tipoDoc">
+            <option value="Seleccione el tipo de documento">Seleccione el tipo de documento</option>"
+            <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+            <option value="Cedula">Cedula</option>
+        </select>
+      </label>
+      <h2>Digite el numero de documento: </h2>
+      <label>
+        <i class='bx bxs-id-card'></i>
+        <input type="text" placeholder="Documento">
+      </label>
+      <input type="button" href="#" id="mostrar" value="Mostrar" id="mostrar_info">
+      <input type="button" href="#" id="volver" value="Volver al Inicio">
+    </div>
+  </div>
+  <script src="script_2.js"></script>
+</body>
+</html>
+

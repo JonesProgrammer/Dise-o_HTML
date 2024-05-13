@@ -1,1 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'MontSerrat', sans-serif;
+  }
+  
+#container {
+    display: flex;
+    height: 100vh;
+  }
 
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    background-image: url(2.jpg);
+    background-size: cover;
+  
+    filter: blur(3px);
+   
+    opacity: 1;
+  }
+  
+#izquierda {
+  flex: 1;
+  padding: 5%;
+  background-color: #c7eef3; /* Azul */
+  display: flex;
+  flex-direction: column; /* Alineación vertical */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; 
+  border-radius: 20px 0 0 20px; /* Radio de borde: arriba izquierda, arriba derecha, abajo derecha, abajo izquierda */
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  height: auto;
+  max-width: 90%;
+  margin: 5%;
+  left: 5%;
+  
+  position: relative;
+  z-index: 1;
+}
+  
+#derecha {
+  flex: 1;
+  padding: 5%;
+  background-color: #f8f8f8;
+  display: flex;
+  text-align: center;
+  flex-direction: column; /* Alineación vertical */
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .1);
+  height: auto;
+  max-width: 90%;
+  margin: 5%;
+  right: 5%;
+  
+  position: relative;
+  z-index: 1;
+}
+  
+  /* Media query para pantallas más pequeñas */
+  @media only screen and (max-width: 768px) {
+    #izquierda, #derecha {
+      max-width: 100%;
+      margin: 5%;
+    }
+  }
+
+  #derecha label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+
+  #derecha label input{
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+  }
+
+  #derecha label i{
+    color: #a7a7a7;
+    margin-right: 3px;
+  }
+
+  #mostrar {
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color .3s ease;
+  }
+  
+  #volver {
+    display: inline-block;
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #9191bd;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin: 5%;
+  }
+
+  #mostrar:hover {
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+
+  #volver:hover {
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  }
+  
+  #rectangulo {
+    width: 310px;
+    height: 5px;
+    margin: auto;
+    background-color: #fff; /* Color blanco */
+  }
+  
+  #izquierda h1 {
+    font-size: 30px; /* Puedes ajustar el tamaño según tus preferencias */
+    color: #184168;
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  #izquierda h2 {
+    font-size: 15px; /* Puedes ajustar el tamaño según tus preferencias */
+    color: #184168;
+    margin: auto;
+  }
+
+  #derecha h2 {
+    font-size: 15px; /* Puedes ajustar el tamaño según tus preferencias */
+    color: #000000;
+    margin-bottom: 5px;
+  }
+
+  #izquierda p {
+    font-size: 20px; /* Puedes ajustar el tamaño según tus preferencias */
+    color: #184168;
+    margin: auto;
+  }
+
+  #derecha p {
+    font-size: 20px; /* Puedes ajustar el tamaño según tus preferencias */
+    color: #000000;
+    margin-bottom: 1px;
+  }
+
+  #mostrar_foto {
+    border-radius: 60%;
+    width: 45%; 
+    max-width: 250px; 
+    height: auto; /* Permite que la altura se ajuste automáticamente según el ancho */
+    border-radius: 5%;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.3);
+  }
